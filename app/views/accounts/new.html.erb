@@ -1,0 +1,32 @@
+<h2>Register your account</h2>
+
+<%= form_for @account do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <br />
+  <%= f.fields_for :owner do |o| %>
+    <%= o.label :first_name %>
+    <%= o.text_field :f_name %>
+    <br />
+    <%= o.label :last_name %>
+    <%= o.text_field :l_name %>
+    <br />
+    <%= o.label :country_code %>
+    <%= o.text_field :country_code %>
+    <br />
+    <%= o.label :mobile_number %>
+    <%= o.text_field :mobile_number %>
+    <br />
+    <%= o.label :email %>
+    <%= o.email_field :email %>
+    <br />
+    <%= o.label :password %>
+    <%= o.password_field :password %>
+    <br />
+    <%= o.label :password_confirmation %>
+    <%= o.password_field :password_confirmation %>
+    <br />
+  <% end %>
+
+  <%= f.submit "Send this shit" %>
+<% end %>
