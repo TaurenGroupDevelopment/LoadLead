@@ -1,1 +1,36 @@
 /* Hero Section */
+#hero{
+  background: url("truck.jpg") center center no-repeat;
+  background-size: cover;
+  height: 100%;
+  color: #FFF;
+  display: flex;
+  align-items: center;
+}
+
+.hero-logo{
+  width: 75%;
+  padding-bottom: 20px;
+}
+
+.hero-tagline{
+  margin-top: auto;
+}
+
+#hero .header-right{
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  border-radius: 30px;
+}
+
+#hero .fas{
+  margin-top: 3%;
+}
+
+#hero a .fas{
+  color: #FFF;
+}
+
+#hero a .fas:hover{
+  color: lightgray;
+}
