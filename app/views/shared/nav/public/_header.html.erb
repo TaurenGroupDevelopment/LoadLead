@@ -1,0 +1,37 @@
+<header>
+  <!-- Nav Bar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation-bar">
+      <span class="navbar-toggler-icon">&#9776;</span>
+    </button>
+
+    <%= image_tag('white-logo.svg', class: 'navbar-brand nav-logo') %>
+
+    <div class="collapse navbar-collapse" id="navigation-bar">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="#social">CONNECT</a></li>
+        <li class="nav-item"><a class="nav-link" href="#who">WHO</a></li>
+        <li class="nav-item"><a class="nav-link" href="#work">WORK</a></li>
+        <li class="nav-item"><a class="nav-link" href="#why">WHY</a></li>
+        <li class="nav-item"><a class="nav-link" href="#customers">CUSTOMERS</a></li>
+        <li class="nav-item"><a class="nav-link" href="#pricing">PRICING</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">CONTACT</a></li>
+        <li class="nav-item"><a class="nav-link" href="#register">REGISTER</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- End Nav Bar -->
+
+  <!-- Flash Messages -->
+  <div class="container">
+    <section class="row" id="flash-notices">
+      <div class="col">
+        <p class="notice"><%= notice %></p>
+        <p class="alert"><%= alert %></p>
+      </div>
+    </section>
+  </div>
+  <!-- End Flash Messages -->
+
+</header>
