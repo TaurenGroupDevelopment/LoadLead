@@ -4,7 +4,6 @@ Rails.application.routes.draw do
   resources :accounts, only: [:new, :create, :show]
 
   root 'welcome#home'
-  match '/pricing', to: 'welcome#pricing', via: :get
 
   match '/subscription_select', to: 'subscription#show', via: :get
 
